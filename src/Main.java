@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,8 +10,9 @@ public class Main {
         nombres.add("Gustavo");
         nombres.add("Maria");
         nombres.add("Gordi");
-        nombres.stream().forEach(System.out::println);
-        //otra forma valida de hacer lo anterior es:
-        nombres.stream().forEach( x -> System.out.println(x));
+        Stream<String> nombresStream = nombres.stream()
+                .map((x -> x.toUpperCase()))
+                .filter(x -> x.startsWith("G"));
+        nombresStream.forEach(x -> System.out.println(x));
     }
 }
