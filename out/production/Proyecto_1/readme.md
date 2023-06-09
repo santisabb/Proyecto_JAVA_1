@@ -19,4 +19,19 @@ FUNCIONES DE ALTO ORDEN: Una funcion puede llamar a otra funcion
 y debe devolver otra funcion, mas sencillamente, una funcion recibe como 
 parametro una funcion o devuelve otra funcion.
  
-No entiendo la parte de lambda, cuando una x tiene apuntado algo.
+RECURSIVIDAD: Esto se define como el proceso de definir algo en terminos de 
+si mismo. El componente clave de un método recursivo es una declaración 
+que ejecuta una llamada a sí mismo.
+
+DESBORDAMIENTO DE PILA (stack overflow): Demasiadas llamadas recursivas
+a un metodo pueden causar el desbordamiento de la pila o stack
+overflow.
+
+El almacenamiento de los parametros y variables esta en la pila y cada nueva
+llamada y cada llamada crea una nueva copia de las mismas, es posible que la 
+pila se agote.
+
+TIPOS DE RECURSIVIDAD
+
+**Recursividad de cola:** Lo ultimo que se ejecuta es la llamada de la funcion a 
+si misma.
