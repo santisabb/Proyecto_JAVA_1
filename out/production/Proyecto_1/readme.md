@@ -33,5 +33,8 @@ pila se agote.
 
 TIPOS DE RECURSIVIDAD
 
-**Recursividad de cola:** Lo ultimo que se ejecuta es la llamada de la funcion a 
+**Recursividad de cola: Lo ultimo** que se ejecuta es la llamada de la funcion a 
+si misma.
+
+**Recursividad de cabeza: Lo primero** que se ejecuta es la llamada de la funcion a
 si misma.

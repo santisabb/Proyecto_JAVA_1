@@ -1,8 +1,10 @@
 package Recursividad;
 
+import java.util.stream.IntStream;
+
 public class recursividad {
     public static void main(String[] args) {
-        headRecursion(6);
+        System.out.println(recursionFuncional(4));
     }
     public static int sumaRecursiva(int n){
         if (n == 0) return 0;
@@ -19,5 +21,10 @@ public class recursividad {
         if (h == -1) return;
         headRecursion(h - 1);
         System.out.println(h);
-         }
+    }
+
+    public static int recursionFuncional(int nro){
+        return IntStream.rangeClosed(1 , 5).reduce(0 , (a , b) -> a + b);
+    }
+
 }
